@@ -1,4 +1,4 @@
-def find_substring (string, dictionary)
+def find_substring(string, dictionary)
     string = string.downcase.split()
     result = Hash.new(0)
     string.each do |word|
@@ -10,3 +10,7 @@ def find_substring (string, dictionary)
     end
     result
 end
+
+dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
+
+find_substring("Howdy partner, sit down! How's it going?", dictionary)
